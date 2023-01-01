@@ -122,7 +122,7 @@ body {
     gap: 1rem;
 }
 
-.header__flex img {
+.header__flex .logo {
     width: 7rem;
 }
 
@@ -306,6 +306,10 @@ a:hover {
     background-color: var(--clr-primary-600);
 }
 
+.footer .logo {
+    fill: aliceblue;
+}
+
 .footer ul{
     display: grid;
     gap: 1rem;
@@ -349,17 +353,20 @@ a:hover {
 @media (min-width:55em) {
 
     body {
-        --section-padding: 3rem 4rem;
+        --section-padding: 4rem;
     --margin-bottom: 2rem;
     }
 
     .header__flex ul {
-        gap: 2rem;
+        gap: 4rem;
     }
 
+    .header__flex .logo{
+        width: 10rem;
+    }
 
     .header__flex a {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .header .header__wraper {
@@ -422,6 +429,7 @@ a:hover {
     }
 
     .section-one .quote{
+        width: 25rem;
         margin-left: 0;
     }
 
@@ -442,11 +450,11 @@ a:hover {
     }
 
     .section-two .email-input{
-        max-width: 90%;
+        max-width: 60%;
     }
 
     .section-two .button{
-        max-width: 50%;
+        max-width: 35%;
     }
 
     .section-two .join .button,
